@@ -1,3 +1,13 @@
+#include "main.h"
+
+/**
+ * _printf - prints stuff
+ * @format: the format
+ * @...: a pointer to function
+ *
+ * Return: nothing
+ */
+
 void _printf(char *format, ...)
 {
 	char *traverse;

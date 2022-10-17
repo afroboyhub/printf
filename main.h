@@ -15,6 +15,6 @@
 int _putchar(char c);
 int _printf(const char *format, ...);
 void _printf(cahr *, ...);
-char *convert(unsigned int, int);
+char *convert(unsigned int num, int base);
 
 #endif /* MAIN_H */
