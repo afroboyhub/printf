@@ -53,7 +53,7 @@ int print_percent(va_list types, char buffer[], int flags, int width, int size, 
 int print_int(va_list types, char buffer[], int flags, int width, int size, int precision);
 int print_binary(va_list types, char buffer[], int flags, int width, int size, int precision);
 int print_unsigned(va_list types, char buffer[], int flags, int width, int precision, int size);
-int print_ocatl(va_list types, char buffer[], int flags, int width, int precision, int size);
+int print_octal(va_list types, char buffer[], int flags, int width, int precision, int size);
 int print_hexadecimal(va_list types, char buffer[], int flags, int width, int size, int precision);
 int print_hexa_upper(va_list types, char buffer[], int flags, int width, int size, int precision);
 int print_hexa(va_list types, char buffer[], int flags, int width, int size, int precison, char map_to[], char flag_ch);

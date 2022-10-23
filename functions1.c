@@ -16,7 +16,7 @@ int print_unsigned(va_list types, char buffer[], int flags, int width, int preci
 	int i = BUFF_SIZE - 2;
 	unsigned long int num = va_arg(types, unsigned long int);
 
-	num = convert_size_usigned(num, size);
+	num = convert_size_unsigned(num, size);
 
 	if (num == 0)
 		buffer[i--] = '0';
@@ -53,7 +53,7 @@ int print_octal(va_list types, char buffer[], int flags, int width, int precisio
 
 	UNUSED(width);
 
-	num = covert_size_unsigned(num, size);
+	num = convert_size_unsigned(num, size);
 
 	if (num == 0)
 		buffer[i--] = '0';

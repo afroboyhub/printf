@@ -202,7 +202,7 @@ int write_unsigned(int is_negative, int ind, char buffer[], int flags, int width
  * Return: written chars
  */
 
-int write_pointer(char buffer[], int ind, int lenght, int width, int flags, char padd, char extra_c, int padd_start)
+int write_pointer(char buffer[], int ind, int length, int width, int flags, char padd, char extra_c, int padd_start)
 {
 	int i;
 
@@ -233,7 +233,7 @@ int write_pointer(char buffer[], int ind, int lenght, int width, int flags, char
 				buffer[--padd_start] = extra_c;
 			buffer[1] = '0';
 			buffer[2] = 'x';
-			return (write(1, &buffer[padd_start], i - padd_start) + write(1, &buffer[ind], lenght - (1 - padd_start) - 2));
+			return (write(1, &buffer[padd_start], i - padd_start) + write(1, &buffer[ind], length - (1 - padd_start) - 2));
 		}
 	}
 	buffer[--ind] = 'x';
